@@ -20,7 +20,7 @@ class Board:
         return self.board
     
     # remove full line and return how much lines had eliminated
-    def remove_full_rows(self):
+    def remFullRows(self):
         full_rows = []
         for row in self.board:
             if min(row) > 0:

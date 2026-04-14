@@ -1,4 +1,4 @@
-##ToDo
+## ToDo
 - [ ] Draw만 담당하는 Class 만들기
 - [ ] mino들 만들기
 - [ ] mino board에 넣어서 pygame으로 렌더링하기

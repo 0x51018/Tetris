@@ -1,0 +1,15 @@
+{
+    "control"
+    :
+    {
+        "move_left": ["K_LEFT"],
+        "move_right": ["K_RIGHT"],
+        "soft_drop": ["K_DOWN"],
+        "hard_drop": ["K_SPACE"],
+        "rotate_clockwise": ["K_x", "K_UP"],
+        "rotate_counterclockwise": ["K_z"],
+        "swap_hold": ["K_c"],
+        "restart game": ["K_r"],
+        "quit game": ["K_ESCAPE"]
+    }
+}

@@ -1,11 +1,10 @@
-import pygame
-from game import Game 
+from game import Game
+from pathlib import Path
 
-pygame.init()
-screen = pygame.display.set_mode((1280,720))
-clock = pygame.time.Clock()
-isGameRunning = True
+def main():
+    BASE_DIR = Path(__file__).resolve().parent
+    main_game = Game(BASE_DIR, 1280, 720)
+    main_game.run()
 
-main_game = Game()
-main_game.game_board.printBoardText()
-pygame.quit()
+if __name__ == "__main__":
+    main()

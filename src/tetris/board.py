@@ -5,7 +5,7 @@ class Board:
         # board start from bottom, left. board[0] is the lowest row.
         self.board = [[0 for col in range(self.width)] for row in range(self.height)]
         """
-        TODO: need more rows for newly created minos. maybe exact 3 line. based of initial mino shape data.
+        TODO: need more cols for newly created minos. maybe exact 3 line. based of initial mino shape data.
         """
 
     # CLI printing board.

@@ -14,7 +14,7 @@ class Game:
 
         self.game_board = Board()
         self.event_handler = EventHandler(self.BASE_DIR)
-        self.draw_manager = DrawManager(self.screen, width, height)
+        self.draw_manager = DrawManager(self.screen, self.game_board, width, height)
 
         print("Game instance initialized.")
 

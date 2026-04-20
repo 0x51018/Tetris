@@ -1,6 +1,7 @@
 import pygame
 from board import Board
 from event import EventHandler
+from draw import DrawManager
 
 class Game:
     def __init__(self, BASE_DIR, width, height, fps=60):
@@ -13,6 +14,7 @@ class Game:
 
         self.game_board = Board()
         self.event_handler = EventHandler(self.BASE_DIR)
+        self.draw_manager = DrawManager(self.screen, width, height)
 
         print("Game instance initialized.")
 
@@ -23,6 +25,7 @@ class Game:
             Real Loop Logic Part. begin
             """
             self.event_handler.check()
+            self.draw_manager.draw()
             """
             end
             """

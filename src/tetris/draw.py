@@ -11,10 +11,13 @@ mino_colors = [
 ]
 
 class DrawManager:
-    def __init__(self, width, height):
+    def __init__(self, screen, width, height):
+        self.screen = screen # screen 위에다가 그림을 그리는 방식임.
+        self.width, self.hegith = width, height
         self.theme = 0 # 추후 theme의 index에 따라 이름 / 색 값들 받아올 수 있게 구현 예정. (언젠가)
         self.mino_colors = mino_colors
     
     def draw(self):
-        pygame.draw.rect()
         # 화면을 그려야 함. 
+        self.screen.fill((30,10,0))
+        pygame.draw.rect(self.screen, (255,255,255), pygame.Rect(100,100,100,100))

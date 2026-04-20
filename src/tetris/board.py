@@ -1,5 +1,5 @@
 class Board:
-    def __init__(self, width=10, height=20):
+    def __init__(self, width=10, height=23):
         self.width = width
         self.height = height
         # board start from bottom, left. board[0] is the lowest row.
